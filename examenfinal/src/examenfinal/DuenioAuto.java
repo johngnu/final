@@ -4,23 +4,24 @@ package examenfinal;
  *
  * @author desktop
  */
-public class Duenio {
+public class DuenioAuto {
 
     private int ci;
     private String nombre;
-    private ListaAutomovilB ls;
+    private ListaAutomovil ls;
 
-    public Duenio() {
+    public DuenioAuto() {
     }
 
-    public Duenio(int ci, String nombre, ListaAutomovilB ls) {
+    public DuenioAuto(int ci, String nombre, ListaAutomovil ls) {
         this.ci = ci;
         this.nombre = nombre;
         this.ls = ls;
     }
 
     public void mostrar() {
-
+        System.out.println("ci: " + ci + " nombre: " + nombre);
+        ls.mostrarLD();
     }
 
     public int getCi() {
@@ -39,11 +40,11 @@ public class Duenio {
         this.nombre = nombre;
     }
 
-    public ListaAutomovilB getLs() {
+    public ListaAutomovil getLs() {
         return ls;
     }
 
-    public void setLs(ListaAutomovilB ls) {
+    public void setLs(ListaAutomovil ls) {
         this.ls = ls;
     }
 
