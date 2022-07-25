@@ -4,7 +4,7 @@ package examenfinal;
  *
  * @author desktop
  */
-public class Auto {
+public class Automovil {
 
     private String marca;
     private int modelo;
@@ -12,10 +12,10 @@ public class Auto {
     private String color;
     private int precio;
 
-    public Auto() {
+    public Automovil() {
     }
 
-    public Auto(String marca, int modelo, String tipo, String color, int precio) {
+    public Automovil(String marca, int modelo, String tipo, String color, int precio) {
         this.marca = marca;
         this.modelo = modelo;
         this.tipo = tipo;
