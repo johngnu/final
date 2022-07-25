@@ -6,7 +6,7 @@ package examenfinal;
  */
 public class NodoD {
 
-    private DuenioAuto dato;
+    private Automovil dato;
     private NodoD ant;
     private NodoD sig;
 
@@ -14,11 +14,11 @@ public class NodoD {
         ant = sig = null;
     }
 
-    public DuenioAuto getDato() {
+    public Automovil getDato() {
         return dato;
     }
 
-    public void setDato(DuenioAuto dato) {
+    public void setDato(Automovil dato) {
         this.dato = dato;
     }
 

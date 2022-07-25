@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package recursividad;
 
 /**
@@ -10,5 +5,9 @@ package recursividad;
  * @author desktop
  */
 public class Princiapal {
-    
+
+    public static void main(String[] args) {
+        Funciones fc = new Funciones();
+        System.out.println(fc.facto(5));
+    }
 }
