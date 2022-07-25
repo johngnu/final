@@ -14,7 +14,12 @@ public class Principal {
         Automovil a2 = new Automovil("ford", 2020, "fiesta", "rojo", 20000);
         Automovil a3 = new Automovil("fiat", 2022, "500x", "plomo", 22000);
         
-        a1.mostrar();
+        ListaAutomovil lda = new ListaAutomovil();
+        lda.adiFinalLD(a1);
+        lda.adiFinalLD(a2);
+        lda.adiFinalLD(a3);
+        
+        lda.mostrarLD();
     }
     
 }

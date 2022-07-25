@@ -8,12 +8,12 @@ public class Duenio {
 
     private int ci;
     private String nombre;
-    private ListaAutomovil ls;
+    private ListaAutomovilB ls;
 
     public Duenio() {
     }
 
-    public Duenio(int ci, String nombre, ListaAutomovil ls) {
+    public Duenio(int ci, String nombre, ListaAutomovilB ls) {
         this.ci = ci;
         this.nombre = nombre;
         this.ls = ls;
@@ -39,11 +39,11 @@ public class Duenio {
         this.nombre = nombre;
     }
 
-    public ListaAutomovil getLs() {
+    public ListaAutomovilB getLs() {
         return ls;
     }
 
-    public void setLs(ListaAutomovil ls) {
+    public void setLs(ListaAutomovilB ls) {
         this.ls = ls;
     }
 
