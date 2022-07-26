@@ -8,9 +8,9 @@ public class Funciones {
 
     public int suma(int n) {
         if (n == 1) {
-            return (facto(fibo(n)) / potencia(primo(n), primo(n + 1)));
+            return (facto(fibo(n)) / potencia(impar(n), impar(n + 1)));
         } else {
-            return (suma(n - 1) + (facto(fibo(n)) / potencia(primo(n), primo(n + 1))));
+            return (suma(n - 1) + (facto(fibo(n)) / potencia(impar(n), n + 1)));
         }
     }
 
@@ -44,22 +44,12 @@ public class Funciones {
             return (potencia(b, e - 1) * b);
         }
     }
-
-    public int primo(int n) {
-        int num, count, i;
-        num = 1;
-        count = 0;
-        while (count < n) {
-            num = num + 1;
-            for (i = 2; i <= num; i++) { //Here we will loop from 2 to num
-                if (num % i == 0) {
-                    break;
-                }
-            }
-            if (i == num) {//if it is a prime number
-                count = count + 1;
-            }
+    
+    public int impar(int n) {
+        int i = 1;
+        for (int j = 1; j < n; j++) {
+            i += 2;
         }
-        return num;
+        return i;
     }
 }
